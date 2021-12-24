@@ -5,6 +5,9 @@ import random
 
 letters = "uqtianc"
 constant = "u"
+minLength = 4
+maxLength = 10
+
 
 correctWords = []
 
@@ -13,7 +16,7 @@ isEnglish = enchant.Dict("en_US")
 
 print("finding words...")
 def findWord():    
-    wordSize = random.randint(4,10) 
+    wordSize = random.randint(minLength,maxLength) 
     word = "".join(random.choices(letters, k=wordSize))
     if constant in word:
         if isEnglish.check(word):
