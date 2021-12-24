@@ -4,7 +4,6 @@ import random
 
 
 letters = "uqtianc"
-easyLetters = "eariotnslc"
 constant = "u"
 
 correctWords = []
